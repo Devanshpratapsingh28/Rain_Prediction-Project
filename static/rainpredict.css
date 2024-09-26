@@ -34,6 +34,14 @@ body {
     margin: 0 auto; 
 }
 
+#inner-1{
+    color: #7036b6;
+}
+
+#inner-3{
+    color: #39FF14;
+}
+
 input {
     background-color: transparent;
     resize: none;
@@ -65,14 +73,6 @@ button {
     width: 100%;
     height: 20%;
     text-align: center;
-}
-#inner-3,#inner-1{
-    background-color: #98FF98;
-    color: #333333;
-    width: 100%;
-    height: 20%;
-    text-align: center;
-    border-radius: 25px; 
 }
 @media (max-width: 784px) {
     input {
