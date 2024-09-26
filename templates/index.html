@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='weather.css') }}">
+</head>
+
+<body>
+    <div id="outer-div">
+        <div id="div-1">
+            <input type="text" id="div-1-1" placeholder="enter city name...">
+            <button id="div-1-2" type="button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        <div id="div-2">
+            <div id="div-2-1"><img src="{{ url_for('static', filename='imagesicon/drizzle.png') }}" alt="rain"></div>
+            <div id="div-2-2">22°C</div>
+            <div id="div-2-3">City</div>
+        </div>
+        <div id="div-3">
+            <div id="div-3-1">
+                <div id="div-3-1-1"><img src="{{ url_for('static', filename='imagesicon/wind.png') }}" alt="wind" style="max-width: 75%; height: auto;"></div>
+                <div id="div-3-1-2">
+                    <div id="windspeed">23 km/h</div>
+                    <div>Wind Speed</div>
+                </div>
+            </div>
+            <div id="div-3-2">
+                <div id="div-3-2-1"><img src="{{ url_for('static', filename='imagesicon/gauge1.png') }}" alt="pressure" style="max-width: 90%; height: auto;"></div>
+                <div id="div-3-2-2">
+                    <div id="pressure">1 atm</div>
+                    <div>Pressure</div>
+                </div>
+            </div>
+            <div id="div-3-3">
+                <div id="div-3-3-1"><img src="{{ url_for('static', filename='imagesicon/humidity.png') }}" alt="humidity" style="max-width: 75%; height: auto;"></div>
+                <div id="div-3-3-2">
+                    <div id="humidity">50%</div>
+                    <div>Humidity</div>
+                </div>
+            </div>
+        </div>
+        <div id="div-4">
+            <a href="{{ url_for('predict') }}" target="_main">Rainfall Predictor</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='weatherjs.js') }}"></script>
+</body>
+</html>

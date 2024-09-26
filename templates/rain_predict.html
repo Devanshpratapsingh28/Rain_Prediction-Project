@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainfall Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='rainpredict.css') }}">
+</head>
+<body>
+    <div id="outer-container">
+        <div id="inner-1">Enter Details to predict rain:</div>
+        <div id="inner-2">
+            <form action="{{ url_for('predict') }}" method="post">
+
+                Date:
+                <input type="text" name="day" placeholder="Enter date like 1,2..31" required><br><br>
+                Pressure:
+                <input type="text" name="pressure" placeholder="Enter pressure.." required><br><br>
+                Temperature:
+                <input type="text" name="temperature" placeholder="Enter temperature.." required><br><br>
+                Dewpoint:
+                <input type="text" name="dewpoint" placeholder="Enter dewpoint.." required><br><br>
+                Humidity:
+                <input type="text" name="humidity" placeholder="Enter humidity" required><br><br>
+                Cloud:
+                <input type="text" name="cloud" placeholder="Enter cloud" required><br><br>
+                Sunshine:
+                <input type="text" name="sunshine" placeholder="Enter sunshine.." required><br><br>
+                Wind-direction:
+                <input type="text" name="wind_direction" placeholder="Enter wind-direction.." required><br><br>
+                Wind-speed:
+                <input type="text" name="windspeed" placeholder="Enter wind-speed.." required><br><br>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <div id="inner-3">
+            <p>{{isRain}}</p>
+        </div>
+    </div>
+
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "K2D", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(rain2.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#outer-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#div-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    height: 8%;
+}
+
+#div-1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    width: 70%;
+    height: 70%;
+    font-size: large;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+}
+
+#div-1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    height: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+}
+
+#div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: space-between;
+    width: 92%;
+    height: 60%;
+}
+
+#div-2-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div-2-2, #div-2-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+#div-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    height: 12%;
+}
+
+#div-3-1, #div-3-2, #div-3-3 {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#div-3-1-2, #div-3-2-2, #div-3-3-2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#div-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    height: 5%;
+    background-color: rgba(81, 214, 114, 0.8);
+    border-radius: 20px;
+    color: #fff;
+}
+
+@media (max-width: 784px) {
+    #div-1, #div-4 {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding: 5px;
+    }
+
+    #div-1-1 {
+        width: 80%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #div-1-2 {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    #div-2-2, #div-2-3 {
+        font-size: 2.2rem;
+    }
+
+    #div-3 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #div-3-1, #div-3-2, #div-3-3 {
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #div-3-1-2, #div-3-2-2, #div-3-3-2 {
+        font-size: 1.2rem;
+        color: rgb(40, 35, 35);
+    }
+}
+
+@media (max-width: 480px) {
+    #outer-div {
+        padding: 10px;
+        margin: 0 10px 0 10px;
+    }
+
+    #div-1, #div-4 {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    #div-1-1 {
+        width: 70%;
+        font-size: 1rem;
+        padding: 6px;
+        border-radius: 20px;
+    }
+
+    #div-1-2 {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+
+    #div-2-2, #div-2-3 {
+        font-size: 2.1em;
+    }
+
+    #div-3 {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+    }
+
+    #div-3-1, #div-3-2, #div-3-3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+
+    #div-3-1-2, #div-3-2-2, #div-3-3-2 {
+        font-size: 1.3rem;
+        color: rgb(40, 35, 35);
+    }
+}
