@@ -1,0 +1,13 @@
+{
+  
+    "day": 1,
+    "pressure": 1025.9,
+    "temperature": 18.3,
+    "dewpoint": 13.1,
+    "humidity": 72,
+    "cloud": 49,
+    "sunshine": 9.3,
+    "wind_direction": 80,
+    "windspeed": 26.3
+  
+}
