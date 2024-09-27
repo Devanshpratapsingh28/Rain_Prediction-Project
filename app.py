@@ -39,7 +39,7 @@ def predict():
             if float_val.is_integer():
                 data.append(int(float_val))
             else:
-                data.append(float_val)   
+                data.append(round(float_val, 2))   
         except:
             return jsonify({'error': 'Invalid input'}), 400 # Handling invalid inputs 
 

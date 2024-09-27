@@ -12,3 +12,7 @@ Create a new environment :
 ```
 conda remove --name myenv --all
 ```
+### File/Folder Description :
+1. `Templates` : It includes those file which is dynamically changing and used by render_template.
+2. `Static` : It includes those file which is static in nature like css,js,images.
+3. `Procfile` : It is file which is directly lookup by heroku and contain some commands which is executed immediately as soon as app starts.
