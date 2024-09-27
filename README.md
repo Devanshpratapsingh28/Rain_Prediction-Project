@@ -10,7 +10,7 @@
 
 Create a new environment : 
 ```
-conda remove --name myenv --all
+python -m venv myenv
 ```
 ### File/Folder Description :
 1. `Templates` : It includes those file which is dynamically changing and used by render_template.
