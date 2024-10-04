@@ -17,11 +17,11 @@
                 Date:
                 <input type="number" min="1" max="31" name="day" placeholder="Enter date" required /><br /><br />
                 Pressure(in hPa):
-                <input type="number" name="pressure" step="0.01" placeholder="Enter pressure" required /><br /><br />
+                <input type="number" step="0.01" name="pressure" placeholder="Enter pressure" required /><br /><br />
                 Temperature:
-                <input type="number" name="temperature" step="0.01" placeholder="Enter temperature" required /><br /><br />
+                <input type="number" min="0" max="100" step="0.01" name="temperature" placeholder="Enter temperature" required /><br /><br />
                 Dewpoint:
-                <input type="number" name="dewpoint" step="0.01" placeholder="Enter dewpoint" required /><br /><br />
+                <input type="number" min="0" max="100" step="0.01" name="dewpoint" placeholder="Enter dewpoint" required /><br /><br />
                 % Humidity:
                 <input type="number" min="0" max="100" name="humidity" placeholder="Enter humidity.." required /><br /><br />
                 % Cloud cover:
@@ -31,7 +31,7 @@
                 Wind-direction(0°-360°):
                 <input type="number" min="0" max="360" name="wind_direction" placeholder="Enter wind-direction" required /><br /><br />
                 Wind-speed(in km/h):
-                <input type="number" name="windspeed" min="0" step="0.01" placeholder="Enter wind-speed" required /><br /><br />
+                <input type="number" min="0" step="0.01" name="windspeed" placeholder="Enter wind-speed" required /><br /><br />
                 <button type="submit">Predict</button>
             </form>
         </div>

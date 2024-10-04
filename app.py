@@ -30,8 +30,7 @@ def predict_api():
 def predict():
     if request.method=="GET":
         return render_template('rain_predict.html')
-    else:
-        print(f"Request method: {request.method}")
+    
     data=[] 
     for val in request.form.values():
         try:
